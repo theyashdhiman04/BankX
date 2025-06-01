@@ -1,110 +1,99 @@
-# 🏦 Banking Dashboard - End-to-End Data Analysis Project
+# BankX — Banking Dashboard
 
-This project focuses on building an interactive **Banking Dashboard** using Power BI. It involves the complete data analysis lifecycle — from data cleaning and transformation to exploratory data analysis (EDA) and visualization.
-
----
-
-## 📌 Project Workflow
-
-Data ➡️ MySQL ➡️ Data Cleaning & Preparation ➡️ EDA ➡️ Power BI Dashboard
+<p align="center">
+  <strong>End-to-end data analysis → MySQL → EDA → Power BI</strong>
+</p>
 
 ---
 
-## 📊 Dataset Information
+## Overview
 
-- **Number of columns**: 24
-- **Stored in**: MySQL
+**BankX** is an interactive **Banking Dashboard** built with Power BI. It covers the full lifecycle: data cleaning, transformation, exploratory analysis, and visualization.
 
----
-
-## 🔧 Steps Involved
-
-### 1. Data Cleaning & Preparation
-
-- Categorized `Income` into bands:
-  - `Low`
-  - `Mid`
-  - `High`
-- Standardized gender, nationality, and other categorical variables.
-- Used conditional columns in Power BI to create income bands.
-- Replaced branch codes (`'1'`, `'2'`, etc.) with readable branch names.
-- Mapped gender codes:
-  - `'1'` → `Male`
-  - `'2'` → `Female`
+| | |
+|---|---|
+| **Columns** | 24 |
+| **Database** | MySQL |
+| **Stack** | SQL, DAX, Power BI |
 
 ---
 
-### 2. Exploratory Data Analysis (EDA)
+## Workflow
 
-- Categorical analysis on:
-  - Gender
-  - Nationality
-- Numerical analysis on:
-  - Credit Card Balance
-  - Bank Loans
-  - Bank Deposits
-  - Checking Account
-  - Saving Account
-  - Estimated Income
-  - Superannuation Savings
+```
+Data  →  MySQL  →  Cleaning & Prep  →  EDA  →  Power BI Dashboard
+```
 
 ---
 
-### 3. Key Insights from EDA
+## Data Cleaning & Prep
 
-- Strong positive correlation between:
-  - `Bank Deposits`, `Checking Account`, `Saving Account`, and `Foreign Currency Account`.
-- Customers with high balance in one account type tend to hold substantial funds in other accounts as well.
-
----
-
-## 📈 Dashboard Pages (Power BI)
-
-1. **Home**
-2. **Loan Analysis**
-3. **Deposit Analysis**
-4. **Summary**
+- **Income bands:** `Low` · `Mid` · `High` (Power BI conditional columns)
+- **Categorical cleanup:** gender, nationality, branch codes → readable labels
+- **Mappings:** `'1'` → Male, `'2'` → Female; branch codes → branch names
 
 ---
 
-## 🚀 Tools & Technologies
+## Exploratory Data Analysis
 
-- **Database**: MySQL
-- **Visualization**: Power BI
-- **Languages**: SQL, DAX (in Power BI)
+**Categorical:** Gender, Nationality  
+
+**Numerical:** Credit Card Balance, Bank Loans, Bank Deposits, Checking Account, Saving Account, Estimated Income, Superannuation Savings
+
+---
+
+## Main insight
+
+Strong positive correlation among **Bank Deposits**, **Checking Account**, **Saving Account**, and **Foreign Currency Account** — high balance in one tends to align with high balances in others.
 
 ---
 
-## 🧠 Learnings
+## Dashboard (4 pages)
 
-- Data wrangling using SQL
-- Power BI conditional columns
-- Deriving insights through EDA
-- Building multi-page dashboards for presentation
+| # | Page | Role |
+|---|------|------|
+| 1 | Home | Summary and main KPIs |
+| 2 | Loan Analysis | Loan mix and segments |
+| 3 | Deposit Analysis | Balances, deposit mix, correlations |
+| 4 | Summary | EDA takeaways and demographics |
 
 ---
-### ✅ Page 1: Home  
-> Overview of the banking data with summary statistics and key visuals.  
+
+## Screenshots
+
+### 1. Home  
+> Summary statistics and main visuals.
 
 <img src="powerbi/page1_home.png" alt="Page 1 - Home" width="700"/>
 
----
-
-### ✅ Page 2: Loan Analysis  
-> Insights into loan distribution, types, and customer segments.  
+### 2. Loan Analysis  
+> Loan distribution and customer segments.
 
 <img src="powerbi/page2_loan_analysis.png" alt="Page 2 - Loan Analysis" width="700"/>
 
----
-
-### ✅ Page 3: Deposit Analysis  
-> Breakdown of account balances, deposit types, and correlation patterns.  
+### 3. Deposit Analysis  
+> Account balances and correlation patterns.
 
 <img src="powerbi/page3_deposit_analysis.png" alt="Page 3 - Deposit Analysis" width="700"/>
 
----
-
-### ✅ Page 4: Summary  
-> Final insights from EDA, including correlations and demographic trends.  
+### 4. Summary  
+> Correlations and demographic trends.
 
 <img src="powerbi/page4_summary.png" alt="Page 4 - Summary" width="700"/>
+
+---
+
+## Tools
+
+- **Database:** MySQL  
+- **BI:** Power BI  
+- **Languages:** SQL, DAX
+
+---
+
+## Takeaways
+
+- Data wrangling with SQL  
+- Power BI conditional columns  
+- EDA and insight extraction  
+- Multi-page dashboards for reporting
